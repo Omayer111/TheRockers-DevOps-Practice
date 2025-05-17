@@ -1,0 +1,151 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0d0d0d;
+  color: #e50914; /* Rock n Roll Red */
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 3px solid #e50914;
+}
+
+header .logo {
+  max-height: 80px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Impact", Charcoal, sans-serif;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e50914;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #262626;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #e50914;
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d0d0d;
+  color: #777;
+  border-top: 3px solid #e50914;
+  margin-top: 30px;
+}
+
+/* Schedule specific styles */
+.schedule-list {
+  list-style: none;
+  padding: 0;
+}
+
+.schedule-list li {
+  background-color: #333;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-left: 5px solid #e50914;
+  border-radius: 4px;
+}
+
+.schedule-list .date {
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.schedule-list .venue {
+  font-style: italic;
+  color: #ccc;
+}
+
+.schedule-list .location {
+  color: #aaa;
+}
+
+/* Contact form basic style */
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  color: #f0f0f0;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #b2070a;
+}
