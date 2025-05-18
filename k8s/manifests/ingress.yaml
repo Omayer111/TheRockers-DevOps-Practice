@@ -1,0 +1,23 @@
+# Ingress is very useful when you have multiple apps because it lets you route traffic to different services based on the URL path or domain name (e.g., /app1, /app2, app1.example.com).
+# You can also use Ingress for a single app to provide a friendly URL (like myapp.local or myapp.example.com) instead of accessing your app via <node-ip>:<nodePort>.
+# Ingress acts as a smart entry point, so you don’t need to expose many NodePorts. Instead, you expose only the Ingress controller (usually on ports 80/443), and it handles routing to your services.
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: myrock-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: myrock.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: myrock-service
+                port:
+                  number: 8080
