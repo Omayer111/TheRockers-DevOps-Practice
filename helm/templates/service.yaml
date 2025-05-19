@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: myrock-service
+spec:
+# this nodeport for exposing ports
+  type: NodePort
+  selector:
+    app: myrock-app
+# this selector is used to select the pods that are created by the deployment
+  selector:
+    app: myrock-app
+  ports:
+    - protocol: TCP
+      port: 8080
+# other container can expose this port which are not the desired ones that's why the selector is used to identify the pods and then directly sending them to the port
+  ports:
+    - protocol: TCP
+      port: 8080
+      # this is the port that is exposed by the service
+      targetPort: 8080
+      # this is the port that is exposed by the container
+      # this is the port that is exposed by the service
+      nodePort: 30080
+# this load balancing is done by rround robin technique defaultly for even distributing of the req 
