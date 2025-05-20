@@ -2,4 +2,4 @@ replicaCount: 2
 
 image:
   repository: omayer111/myrock-app
-  tag: latest
+  tag: "15145279810"
