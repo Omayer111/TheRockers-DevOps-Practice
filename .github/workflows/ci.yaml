@@ -40,6 +40,7 @@ jobs:
       uses: golangci/golangci-lint-action@v6
       with:
         version: v1.56.2
+        args: ./...
   
   push:
     runs-on: ubuntu-latest
@@ -87,5 +88,5 @@ jobs:
         git config --global user.email "omayer2007006@stud.kuet.ac.bd"
         git config --global user.name "Abu OmayerAc"
         git add helm/values.yaml
-        git commit -m "Update tag in Helm chart rn"
-        git push:
+        git commit -m "Update tag in Helm chart"
+        git push
