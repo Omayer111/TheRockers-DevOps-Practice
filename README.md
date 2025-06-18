@@ -98,10 +98,20 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
 Visit [https://localhost:8080](https://localhost:8080)
+
+### Website:
 ![image](https://github.com/user-attachments/assets/ee089876-9e6c-4d18-9fb5-8b1ee6882bc3)
+
+### GitHub CI:
 ![Screenshot 2025-05-21 020250](https://github.com/user-attachments/assets/9a0523ec-8d8c-40a9-801d-62e312b86df1)
+
+### DockerHub:
 ![Screenshot 2025-05-21 020314](https://github.com/user-attachments/assets/8645c4cd-3a96-480a-9a11-7d98f7d0fc79)
+
+### Updated value:
 ![Screenshot 2025-05-21 020333](https://github.com/user-attachments/assets/03de467f-0e7c-4c63-bfc6-4d4ed43048c1)
+
+### Argo CD:
 ![Screenshot 2025-05-21 020404](https://github.com/user-attachments/assets/1068d888-8351-41a8-ba8c-daa777c1d4ad)
 
 
